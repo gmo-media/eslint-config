@@ -5,7 +5,7 @@ eslint config for gmo-media.
 ## Basic Usage
 
 ```bash
-$ npm install --save-dev eslint git+ssh://git@github:gmo-media/eslint-config.git
+$ npm install --save-dev eslint @gmo-media/eslint-config
 ```
 
 `.eslintrc` for legacy JavaScript
@@ -35,7 +35,7 @@ $ npm install --save-dev eslint git+ssh://git@github:gmo-media/eslint-config.git
 ## with React
 
 ```
-$ npm install --save-dev eslint eslint-plugin-react git+ssh://git@github:gmo-media/eslint-config.git
+$ npm install --save-dev eslint eslint-plugin-react @gmo-media/eslint-config
 ```
 
 `.eslintrc`
