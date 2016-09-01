@@ -1,0 +1,26 @@
+{
+  "name": "@gmo-media/eslint-config",
+  "description": "eslint config for gmo-media.",
+  "version": "1.0.0",
+  "author": "GMO Media,Inc.",
+  "devDependencies": {
+    "eslint": "^3.4.0",
+    "eslint-plugin-react": "^6.2.0"
+  },
+  "files": [
+    "index.js",
+    "es5.js",
+    "es6.js",
+    "react.js",
+    "README.md"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "peerDependencies": {
+    "eslint": "^3.4.0"
+  },
+  "repository": "https://github.com/gmo-media/eslint-config",
+  "scripts": {
+    "test": "node test/validate.js && eslint -c es5.js --max-warnings 0 ."
+  }
+}
