@@ -17,13 +17,6 @@ module.exports = {
         'no-invalid-regexp': 'off',
         'no-iterator': 'warn',
         'no-lonely-if': 'warn',
-        'no-multi-spaces': ['warn', {
-            'exceptions': {
-                'BinaryExpression': true,
-                'ImportDeclaration': true,
-                'VariableDeclarator': true
-            }
-        }],
         'no-multi-str': 'warn',
         'no-multiple-empty-lines': ['warn', {
             'max': 2,
@@ -61,10 +54,6 @@ module.exports = {
             'allowObjectStart': true,
             'allowArrayStart': true
         }],
-        'new-cap': ['warn', {
-            'capIsNew': true,
-            'newIsCap': true
-        }],
         'new-parens': 'warn',
         'object-curly-spacing': 'warn',
         'padded-blocks': ['warn', 'never'],
@@ -81,7 +70,6 @@ module.exports = {
         'space-in-parens': ['warn', 'never'],
         'space-infix-ops': 'warn',
         'space-unary-ops': 'warn',
-        'strict': 'warn',
         'wrap-iife': ['warn', 'inside'],
         'yoda': ['warn', 'never', {
             'exceptRange': true
