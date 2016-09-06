@@ -34,6 +34,13 @@ $ npm install --save-dev eslint @gmo-media/eslint-config
 * for with React.
 * Please install the `eslint-plugin-react`.
 
+## Development
+1. Edit the rules.
+2. `npm test`
+3. Update version of package.json.
+4. `git commit -am 'message'`
+5. `git push` and `npm publish --access=public`
+
 ## License
 
 MIT
