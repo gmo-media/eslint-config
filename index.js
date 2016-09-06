@@ -8,89 +8,83 @@ module.exports = {
     },
     'extends': 'eslint:recommended',
     'rules': {
-        'array-bracket-spacing': ['error', 'never'],
-        'block-scoped-var': 'warn',
-        'brace-style': 'error',
-        'comma-spacing': ['error', {
-            'after': true,
-            'before': false
+        'no-console': ['error', {
+            'allow': ['warn', 'error']
         }],
-        'comma-style': ['error', 'last'],
-        'consistent-this': ['warn', 'self'],
-        'curly': ['error', 'all'],
-        'func-style': 0,
-        'guard-for-in': 'warn',
-        'indent': ['error', 4],
-        'key-spacing': ['error', {
-            'singleLine': {
-                'afterColon': true,
-                'beforeColon': false
+        'no-control-regex': 'off',
+        'no-extra-boolean-cast': 'off',
+        'no-floating-decimal': 'warn',
+        'no-invalid-regexp': 'off',
+        'no-iterator': 'warn',
+        'no-lonely-if': 'warn',
+        'no-multi-spaces': ['warn', {
+            'exceptions': {
+                'BinaryExpression': true,
+                'ImportDeclaration': true,
+                'VariableDeclarator': true
             }
         }],
-        'keyword-spacing': ['error', {
-            'after': true,
-            'before': true
+        'no-multi-str': 'warn',
+        'no-multiple-empty-lines': ['warn', {
+            'max': 2,
+            'maxEOF': 1
         }],
-        'linebreak-style': ['error', 'unix'],
-        'max-nested-callbacks': ['warn', 3],
+        'no-self-compare': 'warn',
+        'no-spaced-func': 'warn',
+        'no-whitespace-before-property': 'warn',
+        'no-trailing-spaces': 'warn',
+        'no-undef-init': 'warn',
+        'no-undefined': 'warn',
+        'no-unneeded-ternary': 'warn',
+        'no-unused-expressions': ['warn', {
+            'allowShortCircuit': true,
+            'allowTernary': true
+        }],
+        'array-bracket-spacing': 'warn',
+        'array-callback-return': 'warn',
+        'comma-dangle': 'warn',
+        'comma-spacing': 'warn',
+        'comma-style': 'warn',
+        'consistent-this': 'warn',
+        'curly': 'warn',
+        'eol-last': 'warn',
+        'func-call-spacing': 'warn',
+        'indent': ['warn', 4],
+        'key-spacing': ['warn', {
+            'mode': 'minimum'
+        }],
+        'keyword-spacing': 'warn',
+        'linebreak-style': 'warn',
+        'lines-around-comment': ['warn', {
+            'beforeBlockComment': true,
+            'allowBlockStart': true,
+            'allowObjectStart': true,
+            'allowArrayStart': true
+        }],
         'new-cap': ['warn', {
             'capIsNew': true,
             'newIsCap': true
         }],
-        'no-alert': 'warn',
-        'no-catch-shadow': 'error',
-        'no-console': 'warn',
-        'no-debugger': 'warn',
-        'no-empty': 'warn',
-        'no-eq-null': 'error',
-        'no-extend-native': 'warn',
-        'no-extra-bind': 'warn',
-        'no-extra-parens': 'warn',
-        'no-floating-decimal': 'error',
-        'no-iterator': 'warn',
-        'no-lonely-if': 'warn',
-        'no-multi-spaces': ['error', {
-            'exceptions': {
-                'AssignmentExpression': true,
-                'ImportDeclaration': true,
-                'Property': true,
-                'VariableDeclarator': true
-            }
-        }],
-        'no-multi-str': 'error',
-        'no-multiple-empty-lines': ['warn', {
-            'max': 2
-        }],
-        'no-nested-ternary': 'error',
-        'no-proto': 'warn',
-        'no-self-compare': 'error',
-        'no-throw-literal': 'warn',
-        'no-trailing-spaces': 'warn',
-        'no-undef-init': 'warn',
-        'no-undefined': 'warn',
-        'no-underscore-dangle': 'off',
-        'no-unused-expressions': 'warn',
-        'no-unused-vars': 'warn',
-        'object-curly-spacing': ['error', 'never'],
-        'operator-linebreak': ['warn', 'before'],
-        'padded-blocks': ['error', 'never'],
+        'new-parens': 'warn',
+        'object-curly-spacing': 'warn',
+        'padded-blocks': ['warn', 'never'],
         'quote-props': ['warn', 'consistent'],
-        'quotes': ['warn', 'single'],
-        'semi': ['error', 'always'],
-        'semi-spacing': ['warn', {
-            'after': true,
-            'before': false
+        'quotes': ['warn', 'single', {
+            'avoidEscape': true
         }],
+        'semi': ['warn', 'always', {
+            'omitLastInOneLineBlock': true
+        }],
+        'semi-spacing': 'warn',
         'space-before-blocks': 'warn',
-        'space-before-function-paren': ['error', 'never'],
-        'space-in-parens': ['error', 'never'],
+        'space-before-function-paren': ['warn', 'never'],
+        'space-in-parens': ['warn', 'never'],
         'space-infix-ops': 'warn',
-        'space-unary-ops': ['error', {
-            'nonwords': false,
-            'words': true
-        }],
+        'space-unary-ops': 'warn',
         'strict': 'warn',
-        'wrap-iife': ['error', 'inside'],
-        'yoda': 'warn'
+        'wrap-iife': ['warn', 'inside'],
+        'yoda': ['warn', 'never', {
+            'exceptRange': true
+        }]
     }
 };

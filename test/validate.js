@@ -1,4 +1,4 @@
-/* eslint no-console: "off" */
+/* eslint-disable no-console */
 var validator = require('eslint/lib/config/config-validator');
 var configs = [
     'index',

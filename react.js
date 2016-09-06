@@ -4,27 +4,17 @@
 var base = require('./es6');
 
 module.exports = {
-    'env': {
-        'browser': true,
-        'commonjs': true,
-        'es6': true
-    },
+    'env': base.env,
     'extends': 'eslint:recommended',
-    'parserOptions': {
-        'ecmaVersion': 6,
-        'sourceType': 'module',
-        'ecmaFeatures': {
+    'parserOptions': Object.assign({}, base.parserOptions, {
+        'ecmaFeatures': Object.assign({}, base.parserOptions.ecmaFeatures, {
             'jsx': true
-        }
-    },
+        })
+    }),
     'plugins': ['react'],
     'rules': Object.assign({}, base.rules, {
-        // for es6 and ecmaFeatures:jsx
-        'jsx-quotes': ['warn', 'prefer-double'],
-        'no-fallthrough': 'off',
-        'object-shorthand': ['warn', 'methods'],
-        'prefer-arrow-callback': 'warn',
-        'prefer-spread': 'warn',
+        // for ecmaFeatures:jsx
+        'jsx-quotes': 'warn',       // prefer-double
 
         // for react
         'react/display-name': 'off',

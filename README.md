@@ -4,27 +4,13 @@ eslint config for gmo-media.
 
 ## Basic Usage
 
+Install
+
 ```bash
 $ npm install --save-dev eslint @gmo-media/eslint-config
 ```
 
-`.eslintrc` for legacy JavaScript
-
-```json
-{
-  "extends": "@gmo-media/eslint-config"
-}
-```
-
-`.eslintrc` for modern es5 script
-
-```json
-{
-  "extends": "@gmo-media/eslint-config/es5"
-}
-```
-
-`.eslintrc` for es6 script
+`.eslintrc`
 
 ```json
 {
@@ -32,19 +18,21 @@ $ npm install --save-dev eslint @gmo-media/eslint-config
 }
 ```
 
-## with React
+## Rule sets
 
-```
-$ npm install --save-dev eslint eslint-plugin-react @gmo-media/eslint-config
-```
+### `@gmo-media`
+* for legacy JavaScript.
+* Same as `@gmo-media/eslint-config` and `@gmo-media/eslint-config/index`.
 
-`.eslintrc`
+### `@gmo-media/eslint-config/es5`
+* for modern es5 script.
 
-```json
-{
-  "extends": "@gmo-media/eslint-config/react"
-}
-```
+### `@gmo-media/eslint-config/es5`
+* for es6 script.
+
+### `@gmo-media/eslint-config/react`
+* for with React.
+* Please install the `eslint-plugin-react`.
 
 ## License
 
