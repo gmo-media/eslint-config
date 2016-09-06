@@ -38,8 +38,9 @@ $ npm install --save-dev eslint @gmo-media/eslint-config
 1. Edit the rules.
 2. `npm test`
 3. `npm version XXX -m 'message'`
-4. `git push`
-5. `npm publish --access=public`
+4. `git push origin master`
+5. `git push origin v1.x.x`
+6. `npm publish --access=public`
 
 ## License
 
