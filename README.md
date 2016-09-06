@@ -27,19 +27,19 @@ $ npm install --save-dev eslint @gmo-media/eslint-config
 ### `@gmo-media/eslint-config/es5`
 * for modern es5 script.
 
-### `@gmo-media/eslint-config/es5`
+### `@gmo-media/eslint-config/es6`
 * for es6 script.
 
 ### `@gmo-media/eslint-config/react`
-* for with React.
+* with React.
 * Please install the `eslint-plugin-react`.
 
 ## Development
 1. Edit the rules.
 2. `npm test`
-3. Update version of package.json.
-4. `git commit -am 'message'`
-5. `git push` and `npm publish --access=public`
+3. `npm version XXX -m 'message'`
+4. `git push`
+5. `npm publish --access=public`
 
 ## License
 
