@@ -19,18 +19,12 @@ module.exports = {
         }
     },
     'rules': Object.assign({}, base.rules, {
-        'no-extra-bind': 'warn',
-        'no-useless-computed-key': 'warn',
         'no-useless-constructor': 'warn',
         'no-useless-rename': ['warn', {
             'ignoreDestructuring': true
         }],
-        'arrow-body-style': ['warn', 'as-needed', {
-            'requireReturnForObjectLiteral': true
-        }],
         'arrow-parens': 'warn',
         'arrow-spacing': 'warn',
-        'computed-property-spacing': 'warn',
         'generator-star-spacing': ['warn', 'after'],
         'prefer-rest-params': 'warn',
         'prefer-spread': 'warn',

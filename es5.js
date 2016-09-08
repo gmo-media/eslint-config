@@ -17,10 +17,13 @@ module.exports = {
         }
     },
     'rules': Object.assign({}, base.rules, {
+        'no-alert': 'warn',
         'no-array-constructor': 'warn',
-        'no-case-declarations': 'warn',
+        'no-caller': 'warn',
+        'no-case-declarations': 'error',
         'no-eq-null': 'warn',
         'no-extend-native': 'warn',
+        'no-extra-bind': 'warn',
         'no-iterator': 'warn',
         'no-loop-func': 'warn',
         'no-new-func': 'warn',
@@ -28,13 +31,21 @@ module.exports = {
         'no-new-wrappers': 'warn',
         'no-proto': 'warn',
         'no-throw-literal': 'warn',
-        'no-use-before-define': 'warn',
+        'no-undefined': 'warn',
+        'no-use-before-define': ['warn', {
+            'classes': false,
+            'functions': false
+        }],
+        'no-useless-computed-key': 'warn',
         'no-useless-concat': 'warn',
-        'no-with': 'warn',
         'block-scoped-var': 'warn',
-        'comma-dangle': ['warn', 'only-multiline'],
-        'consistent-return': 'warn',
         'guard-for-in': 'warn',
+        'lines-around-comment': ['warn', {
+            'beforeBlockComment': true,
+            'allowBlockStart': true,
+            'allowObjectStart': true,
+            'allowArrayStart': true
+        }],
         'max-nested-callbacks': ['warn', 3]
     })
 };

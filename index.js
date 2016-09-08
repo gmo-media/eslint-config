@@ -8,15 +8,12 @@ module.exports = {
     },
     'extends': 'eslint:recommended',
     'rules': {
-        'no-console': ['error', {
-            'allow': ['warn', 'error']
-        }],
+        'no-catch-shadow': 'warn',
+        'no-case-declarations': 'off',
         'no-control-regex': 'off',
         'no-extra-boolean-cast': 'off',
         'no-floating-decimal': 'warn',
         'no-invalid-regexp': 'off',
-        'no-iterator': 'warn',
-        'no-lonely-if': 'warn',
         'no-multi-str': 'warn',
         'no-multiple-empty-lines': ['warn', {
             'max': 2,
@@ -24,20 +21,21 @@ module.exports = {
         }],
         'no-self-compare': 'warn',
         'no-spaced-func': 'warn',
-        'no-whitespace-before-property': 'warn',
         'no-trailing-spaces': 'warn',
         'no-undef-init': 'warn',
-        'no-undefined': 'warn',
         'no-unneeded-ternary': 'warn',
         'no-unused-expressions': ['warn', {
             'allowShortCircuit': true,
             'allowTernary': true
         }],
+        'no-whitespace-before-property': 'warn',
+        'no-with': 'warn',
         'array-bracket-spacing': 'warn',
         'array-callback-return': 'warn',
         'comma-dangle': 'warn',
         'comma-spacing': 'warn',
         'comma-style': 'warn',
+        'computed-property-spacing': 'warn',
         'consistent-this': 'warn',
         'curly': 'warn',
         'eol-last': 'warn',
@@ -48,12 +46,6 @@ module.exports = {
         }],
         'keyword-spacing': 'warn',
         'linebreak-style': 'warn',
-        'lines-around-comment': ['warn', {
-            'beforeBlockComment': true,
-            'allowBlockStart': true,
-            'allowObjectStart': true,
-            'allowArrayStart': true
-        }],
         'new-parens': 'warn',
         'object-curly-spacing': 'warn',
         'padded-blocks': ['warn', 'never'],
@@ -61,18 +53,16 @@ module.exports = {
         'quotes': ['warn', 'single', {
             'avoidEscape': true
         }],
-        'semi': ['warn', 'always', {
-            'omitLastInOneLineBlock': true
-        }],
+        'semi': 'warn',
         'semi-spacing': 'warn',
         'space-before-blocks': 'warn',
         'space-before-function-paren': ['warn', 'never'],
-        'space-in-parens': ['warn', 'never'],
+        'space-in-parens': 'warn',
         'space-infix-ops': 'warn',
         'space-unary-ops': 'warn',
         'wrap-iife': ['warn', 'inside'],
         'yoda': ['warn', 'never', {
-            'exceptRange': true
+            'onlyEquality': true
         }]
     }
 };

@@ -5,7 +5,7 @@ var base = require('./es6');
 
 module.exports = {
     'env': base.env,
-    'extends': 'eslint:recommended',
+    'extends': ['eslint:recommended', 'plugin:react/recommended'],
     'parserOptions': Object.assign({}, base.parserOptions, {
         'ecmaFeatures': Object.assign({}, base.parserOptions.ecmaFeatures, {
             'jsx': true
@@ -16,7 +16,8 @@ module.exports = {
         // for ecmaFeatures:jsx
         'jsx-quotes': 'warn',       // prefer-double
 
-        // for react
+        // for plugin:react
+        // https://github.com/yannickcr/eslint-plugin-react
         'react/display-name': 'off',
         'react/forbid-component-props': 'off',
         'react/forbid-prop-types': 'off',
