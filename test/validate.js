@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 var validator = require('eslint/lib/config/config-validator');
 var configs = [
-    'index',
+    'legacy',
     'es5',
     'es6',
     'react'

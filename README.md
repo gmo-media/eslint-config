@@ -20,9 +20,8 @@ $ npm install --save-dev eslint @gmo-media/eslint-config
 
 ## Rule sets
 
-### `@gmo-media`
+### `@gmo-media/eslint-config/legacy`
 * for legacy JavaScript.
-* Same as `@gmo-media/eslint-config` and `@gmo-media/eslint-config/index`.
 
 ### `@gmo-media/eslint-config/es5`
 * for modern es5 script.
@@ -31,7 +30,7 @@ $ npm install --save-dev eslint @gmo-media/eslint-config
 * for es6 script.
 
 ### `@gmo-media/eslint-config/react`
-* with React.
+* for with React.
 * Please install the `eslint-plugin-react`.
 
 ## Development
