@@ -1,52 +1,59 @@
 /**
  * basic config (for legacy JavaScript)
  */
+var ruleBestPractices = {
+    'no-case-declarations': 'off',
+    'no-empty-pattern': 'off',
+    'no-fallthrough': 'off',
+    'no-octal': 'off',
+    'no-redeclare': 'off',
+    'no-self-assign': 'off',
+    'no-unused-labels': 'off'
+};
+
+var ruleStylisticIssues = {             // fixable only
+    'array-bracket-spacing': 'warn',
+    'comma-dangle': 'warn',
+    'comma-spacing': 'warn',
+    'computed-property-spacing': 'warn',
+    'eol-last': 'warn',
+    'func-call-spacing': 'warn',
+    'indent': ['warn', 4],
+    'key-spacing': ['warn', {
+        'mode': 'minimum'
+    }],
+    'keyword-spacing': 'warn',
+    'linebreak-style': 'warn',
+    'no-multiple-empty-lines': ['warn', {
+        'max': 2,
+        'maxEOF': 1
+    }],
+    'no-trailing-spaces': 'warn',
+    'no-whitespace-before-property': 'warn',
+    'object-curly-spacing': 'warn',
+    'padded-blocks': ['warn', 'never'],
+    'quotes': ['warn', 'single', {
+        'avoidEscape': true
+    }],
+    'semi-spacing': 'warn',
+    'semi': 'warn',
+    'space-before-blocks': 'warn',
+    'space-before-function-paren': ['warn', 'never'],
+    'space-in-parens': 'warn',
+    'space-infix-ops': 'warn',
+    'space-unary-ops': 'warn'
+};
+
 module.exports = {
     'env': {
         'browser': true,
         'jquery': true
     },
     'extends': 'eslint:recommended',
-    'rules': {
-        // Best Practices
-        'no-case-declarations': 'off',
-        'no-empty-pattern': 'off',
-        'no-fallthrough': 'off',
-        'no-octal': 'off',
-        'no-redeclare': 'off',
-        'no-self-assign': 'off',
-        'no-unused-labels': 'off',
-
-        // Stylistic Issues
-        'array-bracket-spacing': 'warn',                    // fixable
-        'comma-dangle': 'warn',                             // fixable
-        'comma-spacing': 'warn',                            // fixable
-        'computed-property-spacing': 'warn',                // fixable
-        'eol-last': 'warn',                                 // fixable
-        'func-call-spacing': 'warn',                        // fixable
-        'indent': ['warn', 4],                              // fixable
-        'key-spacing': ['warn', {                           // fixable
-            'mode': 'minimum'
-        }],
-        'keyword-spacing': 'warn',                          // fixable
-        'linebreak-style': 'warn',                          // fixable
-        'no-multiple-empty-lines': ['warn', {               // fixable
-            'max': 2,
-            'maxEOF': 1
-        }],
-        'no-trailing-spaces': 'warn',                       // fixable
-        'no-whitespace-before-property': 'warn',            // fixable
-        'object-curly-spacing': 'warn',                     // fixable
-        'padded-blocks': ['warn', 'never'],                 // fixable
-        'quotes': ['warn', 'single', {                      // fixable
-            'avoidEscape': true
-        }],
-        'semi-spacing': 'warn',                             // fixable
-        'semi': 'warn',                                     // fixable
-        'space-before-blocks': 'warn',                      // fixable
-        'space-before-function-paren': ['warn', 'never'],   // fixable
-        'space-in-parens': 'warn',                          // fixable
-        'space-infix-ops': 'warn',                          // fixable
-        'space-unary-ops': 'warn'                           // fixable
-    }
+    'rules': Object.assign({},
+        ruleBestPractices,
+        ruleStylisticIssues
+    ),
+    'ruleBestPractices':   ruleBestPractices,
+    'ruleStylisticIssues': ruleStylisticIssues
 };

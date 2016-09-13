@@ -1,8 +1,9 @@
-var base = require('../es5');
-
-module.exports = Object.assign({}, base.rules, {
+module.exports = {
     'env': {
         'node': true,
         'commonjs': true
-    }
-});
+    },
+    'extends': [
+        '../es5'
+    ].map(require.resolve)
+};
