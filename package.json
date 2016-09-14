@@ -15,7 +15,7 @@
     "README.md"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "es5.js",
   "peerDependencies": {
     "eslint": "^3.4.0"
   },
