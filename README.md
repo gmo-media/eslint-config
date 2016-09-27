@@ -14,7 +14,11 @@ $ npm install --save-dev eslint @gmo-media/eslint-config
 
 ```json
 {
-  "extends": "@gmo-media/eslint-config/es6"
+  "extends": "@gmo-media/eslint-config",
+  "env": {
+    "browser": true,
+    "jquery": true
+  }
 }
 ```
 
@@ -24,7 +28,7 @@ $ npm install --save-dev eslint @gmo-media/eslint-config
 * for legacy JavaScript.
 
 ### `@gmo-media/eslint-config/es5`
-* for modern es5 script.
+* for modern es5 script. (default)
 
 ### `@gmo-media/eslint-config/es6`
 * for es6 script.
