@@ -4,8 +4,8 @@
   "version": "1.2.2",
   "author": "GMO Media,Inc.",
   "devDependencies": {
-    "eslint": "^3.4.0",
-    "eslint-plugin-react": "^6.2.0"
+    "eslint": "^4.6.1",
+    "eslint-plugin-react": "^7.3.0"
   },
   "files": [
     "legacy.js",
@@ -17,7 +17,7 @@
   "license": "MIT",
   "main": "es5.js",
   "peerDependencies": {
-    "eslint": "^3.4.0"
+    "eslint": "^4.6.1"
   },
   "repository": "https://github.com/gmo-media/eslint-config",
   "scripts": {
