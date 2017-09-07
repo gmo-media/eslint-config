@@ -9,5 +9,6 @@ module.exports = {
   'for-direction': 'warn',
   'getter-return': 'warn',
   'no-await-in-loop': 'warn',
+  'no-extra-parens': 'off',             // Issue #1
   'no-prototype-builtins': 'warn'
 };

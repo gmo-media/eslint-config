@@ -30,28 +30,21 @@ module.exports = {
   'no-iterator': 'warn',
   'no-lone-blocks': 'warn',
   'no-loop-func': 'warn',
-  'no-multi-spaces': ['error', {
-    'ignoreEOLComments': true,
-    'exceptions': {
-      'Property': true,
-      'BinaryExpression': true,
-      'VariableDeclarator': true,
-      'ImportDeclaration': true
-    }
-  }],
+  'no-multi-spaces': 'off',             // Issue #3
   'no-multi-str': 'warn',
   'no-new-func': 'warn',
   'no-new-wrappers': 'warn',
   'no-octal-escape': 'warn',
   'no-proto': 'warn',
   'no-self-compare': 'warn',
+  'no-unused-expressions': 'off',       // Issue #5
   'no-useless-concat': 'warn',
   'no-useless-return': 'error',
   'no-with': 'warn',
   'radix': ['warn', 'as-needed'],
   'require-await': 'warn',
   'wrap-iife': ['error', 'inside'],
-  'yoda': ['error', 'never', {
+  'yoda': ['error', 'never', {          // Issue #11
     'onlyEquality': true
   }]
 };

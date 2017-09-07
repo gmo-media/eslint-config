@@ -13,11 +13,12 @@ module.exports = {
   'comma-spacing': 'error',
   'comma-style': 'error',
   'computed-property-spacing': 'error',
-  'consistent-this': 'warn',
+  'consistent-this': 'warn',            // Issue #6
   'eol-last': 'error',
   'func-call-spacing': 'error',
+  'indent': 'off',                      // Issue #14
   'jsx-quotes': 'error',
-  'key-spacing': ['error', {
+  'key-spacing': ['error', {            // Issue #7
     'mode': 'minimum'
   }],
   'keyword-spacing': 'error',
@@ -30,13 +31,15 @@ module.exports = {
   }],
   'max-nested-callbacks': ['warn', 5],
   'max-statements-per-line': 'warn',
+  'new-cap': 'off',                     // Issue #8
   'new-parens': 'error',
   'no-array-constructor': 'warn',
-  'no-lonely-if': 'error',
+  'no-lonely-if': 'off',                // Issue #2
   'no-multiple-empty-lines': ['error', {
     'max': 2,
     'maxEOF': 1
   }],
+  'no-nested-ternary': 'off',           // Issue #4
   'no-new-object': 'warn',
   'no-restricted-syntax': ['warn', 'WithStatement'],
   'no-tabs': 'warn',
@@ -53,14 +56,14 @@ module.exports = {
   }],
   'one-var-declaration-per-line': 'error',
   'operator-assignment': 'error',
-  'operator-linebreak': 'error',
+  'operator-linebreak': 'error',        // Issue #9
   'padded-blocks': ['error', 'never'],
   'quote-props': ['error', 'as-needed', {
     'keywords': true,     // 分かりにくさ解消のため
     'numbers': true,      // 分かりにくさ解消のため
     'unnecessary': false  // JSONからコピーした時のため
   }],
-  'quotes': ['error', 'single', {
+  'quotes': ['error', 'single', {       // Issue #10
     'avoidEscape': true,
     'allowTemplateLiterals': true
   }],

@@ -7,7 +7,7 @@
  */
 module.exports = {
   'arrow-body-style': 'error',
-  'arrow-parens': ['error', 'as-needed', {      // Airbnb style
+  'arrow-parens': ['error', 'as-needed', {        // Issue #12 (Airbnb style)
     'requireForBlockBody': true
   }],
   'arrow-spacing': 'error',
