@@ -7,13 +7,9 @@ module.exports = {
   },
   'extends': 'eslint:recommended',
   'parserOptions': {
-    'ecmaVersion': 2016,        // same as 7
     'sourceType': 'module',
     'ecmaFeatures': {
-      // enable support for the experimental object rest/spread properties
-      'experimentalObjectRestSpread': true,
-      // enable global strict mode
-      'impliedStrict': true
+      'experimentalObjectRestSpread': true
     }
   },
   'rules': Object.assign({},
