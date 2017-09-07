@@ -2,43 +2,40 @@
 
 ## 基本的な考え方
 これは各サイトに共通のルールを適用するためのものであり、最低限の設定しか行っていません。
-Parser Options や Environments などは、利用する側のESLint設定で指定するものとします。
+Environments は利用する側のESLint設定で指定するものとします。（`legacy` を覗く）
 
 ## Rule sets
 用途に応じて複数のルールセットを作成します。
-すべてのルールは`eslint:recommended`をextendsしています。
+すべてのルールは `eslint:recommended` を extends します。
 
 ### `legacy`
 * 改修は行わないものの、コードを読んだり小さな修正をしたりすることがある、レガシーコード向けのルールセットです。
 * Environments
-    * `browser`と`jquery`を指定しています。
+    * `browser` と `jquery` を有効
 * Rules
-    * Possible Errors : すべてデフォルト
-    * Best Practices : すべて`off`
-    * Strict Mode : 無効（デフォルト）
-    * Variables : すべてデフォルト
-    * Node.js and CommonJS : すべて`off`（デフォルト）
-    * Stylistic Issues :
-        * fixオプションで修正可能なものは有効
-        * レガシーコードによくあるイディオムは`off`
-    * ECMAScript 6 : すべてデフォルト
+    * Possible Errors
+        * recommended のうち、バグ発見の可能性が低いものは `off`
+    * Best Practices
+        * recommended のうち、fix オプションで修正できないものは `off`
+    * Variables
+        * recommended の設定をすべて `off`
+    * Stylistic Issues
+        * recommended のまま
 
 ### `es5`
 * 保守性が重視される、ES5で書かれたコードに適用します。
-* `legacy`が無効化した設定を戻し、Best Practices や Variables、Stylistic Issues の一部を有効にしています。
 
 ### `es6`
 * ES6で書かれたコードに適用します。
-* `es5`をベースに、ECMAScript 6 向けの設定を追加しています。
 
 ### `react`
 * Reactを使っているコードに適用します。
-* `es6.js`をベースに、JSXとReact用の設定（`eslint-plugin-react`）を追加します。
+* `eslint-plugin-react` を使用します。
+* `plugin:react/recommended` を extends します。
 
 ## 設定値について
-* `eslint:recommended`に定義されている設定のみを扱います。それ以外のルールは追加しません。
-* デフォルトが`off`になっているルールを有効にする場合は`warn`にします。
-* オプションを追加するだけなら`error`のままにします。
+* recommended のままでよい設定は指定しません。
+* `--fix` オプションで修正できるものは `error`、できないものは `warn` にします。
 
 ## 更新について
 * Issueを立て、設定の変更を理由つきでリクエストします。
