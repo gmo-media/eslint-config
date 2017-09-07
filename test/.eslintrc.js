@@ -4,6 +4,6 @@ module.exports = {
         'commonjs': true
     },
     'extends': [
-        '../es5'
+        '../es6'
     ].map(require.resolve)
 };
