@@ -16,8 +16,10 @@ $ npm install --save-dev eslint @gmo-media/eslint-config
 {
   "extends": "@gmo-media/eslint-config",
   "env": {
-    "browser": true,
-    "jquery": true
+    "browser": true
+  },
+  "rules": {
+    "indent": ["error", 2]
   }
 }
 ```
@@ -34,7 +36,7 @@ $ npm install --save-dev eslint @gmo-media/eslint-config
 * for es6 script.
 
 ### `@gmo-media/eslint-config/react`
-* for with React.
+* for React.
 * Please install the `eslint-plugin-react`.
 
 ## Development
