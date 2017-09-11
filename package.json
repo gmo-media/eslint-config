@@ -1,7 +1,7 @@
 {
   "name": "@gmo-media/eslint-config",
   "description": "eslint config for gmo-media.",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "GMO Media,Inc.",
   "devDependencies": {
     "eslint": "^4.6.1",
