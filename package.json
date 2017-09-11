@@ -8,10 +8,8 @@
     "eslint-plugin-react": "^7.3.0"
   },
   "files": [
-    "legacy.js",
-    "es5.js",
-    "es6.js",
-    "react.js",
+    "*.js",
+    "rules/*.js",
     "README.md"
   ],
   "license": "MIT",
