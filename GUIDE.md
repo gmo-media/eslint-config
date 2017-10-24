@@ -9,7 +9,8 @@ Environments は利用する側のESLint設定で指定するものとします�
 すべてのルールは `eslint:recommended` を extends します。
 
 ### `legacy`
-* 改修は行わないものの、コードを読んだり小さな修正をしたりすることがある、レガシーコード向けのルールセットです。
+改修は行わないものの、コードを読んだり小さな修正をしたりすることがある、レガシーコード向けのルールセットです。
+
 * Environments
     * `browser` と `jquery` を有効
 * Rules
@@ -23,13 +24,14 @@ Environments は利用する側のESLint設定で指定するものとします�
         * recommended のまま
 
 ### `es5`
-* 保守性が重視される、ES5で書かれたコードに適用します。
+保守性が重視される、ES5で書かれたコードに適用します。
 
 ### `es6`
-* ES6で書かれたコードに適用します。
+ES6で書かれたコードに適用します。
 
 ### `react`
-* Reactを使っているコードに適用します。
+Reactを使っているコードに適用します。
+
 * `eslint-plugin-react` を使用します。
 * `plugin:react/recommended` を extends します。
 
